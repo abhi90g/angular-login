@@ -50,7 +50,7 @@ describe('AppComponent', () => {
   }));
 
   it('should show message when clicked on sign up', fakeAsync(() => {
-    const buttonElem = fixture.debugElement.query(By.css('a'));
+    const buttonElem = fixture.debugElement.query(By.css('input[type=button]'));
     const message = fixture.nativeElement.querySelector('.messages');
     spyOn(component, 'signup');
     buttonElem.triggerEventHandler('click', null);

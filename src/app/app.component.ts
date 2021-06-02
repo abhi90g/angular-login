@@ -26,11 +26,13 @@ export class AppComponent implements OnInit {
 
   forgot() {
     this.showMessage = true;
+    this.showLogindata = false;
     this.messageText = 'Forgot password clicked!'
   }
 
   signup() {
     this.showMessage = true;
+    this.showLogindata = false;
     this.messageText = 'Sign up clicked!'
   }
 

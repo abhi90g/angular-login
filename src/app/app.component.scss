@@ -61,7 +61,24 @@
           text-decoration: none;
           color: blue;
         }
+
+        input {
+          background: none;
+          border: none;
+          padding: 0;
+          color: blue;
+          cursor: pointer;
+        }
       }
+    }
+  }
+
+  .messages {
+    height: 30px;
+    padding-top: 10px;
+
+    p {
+      margin-top: auto;
     }
   }
 }
