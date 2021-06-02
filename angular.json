@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "vocera-assessment": {
+    "angular-login": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/vocera-assessment",
+            "outputPath": "dist/angular-login",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "vocera-assessment:build"
+            "browserTarget": "angular-login:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "vocera-assessment:build:production"
+              "browserTarget": "angular-login:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "vocera-assessment:build"
+            "browserTarget": "angular-login:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "vocera-assessment:serve"
+            "devServerTarget": "angular-login:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "vocera-assessment:serve:production"
+              "devServerTarget": "angular-login:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "vocera-assessment"
+  "defaultProject": "angular-login"
 }

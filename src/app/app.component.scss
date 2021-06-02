@@ -1,0 +1,67 @@
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .login {
+    border: 1px solid;
+    background: #dddddd;
+    width: 200px;
+    border-radius: 16px;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 4px 10px black;
+
+    form {
+      color: #857d7d;
+
+      .form-control {
+        border-radius: 18px;
+        padding: 10px 0;
+        width: 90%;
+        border: none;
+        outline: none;
+        padding-left: 18px;
+        margin-bottom: 10px;
+      }
+
+      .rememberMe {
+        input[type="checkbox"] {
+          float: left;
+          width: auto;
+        }
+
+        small {
+          display: flex;
+        }
+      }
+
+      .btn {
+        cursor: pointer;
+        border-radius: 18px;
+        padding: 10px 0;
+        border: none;
+        outline: none;
+        width: 100%;
+        background: #eb2802;
+        font-weight: bold;
+      }
+
+      .forgotpass {
+        cursor: pointer;
+        margin-bottom: 35px;
+      }
+
+      .signup {
+        margin-bottom: 35px;
+
+        a {
+          text-decoration: none;
+          color: blue;
+        }
+      }
+    }
+  }
+}
